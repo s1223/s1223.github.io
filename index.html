@@ -702,6 +702,9 @@
         }
 
         dataReservation.push(data);
+        // set dataReservation to localStorage and session
+        localStorage.setItem("dataReservation", JSON.stringify(dataReservation));
+        sessionStorage.setItem("dataReservation", JSON.stringify(dataReservation));
 
         Swal.fire({
           title: 'Success',
